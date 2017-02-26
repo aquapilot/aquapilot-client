@@ -20,6 +20,7 @@ export class LoginPage {
   registerCredentials = {email: 'demo', password: 'demo'};
 
   constructor(private nav: NavController, private auth: AuthService, private alertCtrl: AlertController, private loadingCtrl: LoadingController) {
+
   }
 
   public createAccount() {

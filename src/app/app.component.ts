@@ -5,8 +5,7 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { Dashboard } from '../pages/dashboard/dashboard';
 import { Settings } from '../pages/settings/settings';
 import {LoginPage} from "../pages/login/login";
-
-
+import {TranslateService} from "ng2-translate";
 
 @Component({
   templateUrl: 'app.html'
@@ -18,10 +17,10 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform) {
+  constructor(public platform: Platform, translateService: TranslateService) {
 
     this.rootPage = LoginPage;
-
+    translateService.use('fr'); // TODO do it  according to device language settings
     this.initializeApp();
 
     // used for an example of ngFor and navigation
