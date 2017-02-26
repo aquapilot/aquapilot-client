@@ -1,0 +1,37 @@
+dashboard {
+
+  ion-card {
+    padding:0;
+  }
+
+  ion-card-header {
+    text-align:center;
+  }
+
+  .progress-wrapper{
+    position: relative;
+    margin: 0px auto;
+    font-size: 8vw;
+
+    ion-icon {
+      font-size: 14vw;
+    }
+  }
+
+
+
+  .current{
+    position: absolute;
+    color: #bbb;
+    font-weight: 100;
+
+    left:0;
+    right:0;
+    bottom:0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

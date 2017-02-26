@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Moniteur</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<!--
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-card>
+          <ion-card-header>Plantes</ion-card-header>
+          <ion-card-content class="progress-wrapper">
+
+            <div class="current">
+              <ion-icon name="leaf"></ion-icon>
+            </div>
+            <round-progress [current]="1" [max]="1" responsive="true" rounded="true"></round-progress>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col width-100>
+        <ion-card>
+          <ion-card-header>Poissons</ion-card-header>
+          <ion-card-content class="progress-wrapper">
+
+            <div class="current">
+              <ion-icon name="water"></ion-icon>
+            </div>
+            <round-progress [current]="1" [max]="1" responsive="true" rounded="true"></round-progress>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+-->
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>
+        <ion-card (click)="onClickLighting()">
+          <ion-card-content class="progress-wrapper">
+
+              <div class="current">
+                <ion-icon name="sunny"></ion-icon>
+              </div>
+              <round-progress [current]="brightnessDuration" [max]="brightnessDurationGoal" responsive="true" rounded="true"></round-progress>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col width-50>
+        <ion-card (click)="onClickWater()">
+          <ion-card-content class="progress-wrapper">
+
+            <div class="current">
+              <ion-icon name="water"></ion-icon>
+            </div>
+            <round-progress [current]="1" [max]="1" responsive="true" rounded="true"></round-progress>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col width-50>
+      <ion-card (click)="onClickAir()">
+        <ion-card-content class="progress-wrapper">
+
+          <div class="current">
+            <ion-icon name="thermometer"></ion-icon>
+          </div>
+          <round-progress [current]="1" [max]="1" responsive="true" rounded="true"></round-progress>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
