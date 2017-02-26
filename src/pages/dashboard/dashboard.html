@@ -3,7 +3,12 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Moniteur</ion-title>
+    <ion-title text-center="true">{{ activeAquaticSystem?.name }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="onClickUpdateButton()">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 

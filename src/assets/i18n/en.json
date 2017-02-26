@@ -5,5 +5,16 @@
   "PASSWORD_PLACEHOLDER": "Password",
   "MENU_SETTINGS": "Settings",
   "MENU_SENSORS": "Sensors",
-  "MENU_ALERTS": "Alerts"
+  "MENU_ALERTS": "Alerts",
+  "MENU": "Menu",
+  "MENU_SYSTEMS": "My aquasystems",
+  "ADD_SYSTEM_ACTION": "Add a new aquasystem ...",
+  "NEW_AQUATIC_SYSTEM_WIZZARD_TITLE": "Aquatic system wizzard",
+  "AQUATIC_SYSTEM_NAME": "Name",
+  "AQUATIC_SYSTEM_TYPE_SELECT": "Aquatic system type",
+  "AQUARIUM_TYPE":"Aquarium",
+  "AQUAPONIC_TYPE":"Aquaponic",
+  "HYDROPONIC_TYPE":"Hydroponic",
+  "SAVE_NEW_AQUATIC_SYSTEM_ACTION": "Save",
+  "UPDATE_AQUATIC_SYSTEM_TITLE": "Update system informations"
 }

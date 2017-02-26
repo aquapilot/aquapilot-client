@@ -16,6 +16,8 @@ import { AirPage } from "../pages/air/air";
 import {LoginPage} from "../pages/login/login";
 import {TranslateLoader, TranslateStaticLoader} from "ng2-translate";
 import {Http} from "@angular/http";
+import {NewAquaticSystemWizardPage} from "../pages/new-aquatic-system-wizard/new-aquatic-system-wizard";
+import {UpdateAquaticSystemPage} from "../pages/update-aquatic-system/update-aquatic-system";
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {Http} from "@angular/http";
     LightingPage,
     WaterPage,
     AirPage,
-    LoginPage
+    LoginPage,
+    NewAquaticSystemWizardPage,
+    UpdateAquaticSystemPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -47,7 +51,9 @@ import {Http} from "@angular/http";
     LightingPage,
     WaterPage,
     AirPage,
-    LoginPage
+    LoginPage,
+    NewAquaticSystemWizardPage,
+    UpdateAquaticSystemPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

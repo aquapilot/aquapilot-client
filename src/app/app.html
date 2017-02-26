@@ -1,21 +1,34 @@
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title>{{ 'MENU' | translate }}</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
-      <ion-item-group>
-        <ion-item-divider color="light">{{ 'MENU_SETTINGS' | translate }}</ion-item-divider>
-        <ion-item>{{ 'MENU_SENSORS' | translate }}</ion-item>
-        <ion-item>{{ 'MENU_ALERTS' | translate }}</ion-item>
-      </ion-item-group>
-      <ion-item-group>
-        <ion-item-divider color="light">Measures</ion-item-divider>
-        <ion-item>Dashboard</ion-item>
-        <ion-item>Archives</ion-item>
-      </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">{{ 'MENU_SYSTEMS' | translate }}</ion-item-divider>
+      <ion-list>
+        <button menuClose ion-item (click)="onClickAddAquaticSystem()">
+          <ion-icon name="add-circle"></ion-icon>
+          {{ 'ADD_SYSTEM_ACTION' | translate }}
+        </button>
+        <button menuClose ion-item *ngFor="let sys of aquaticSystems" (click)="onSelectAquaticSystemInMenu(sys)">
+          {{sys.name}}
+        </button>
+      </ion-list>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider color="light">{{ 'MENU_SETTINGS' | translate }}</ion-item-divider>
+      <ion-item>{{ 'MENU_SENSORS' | translate }}</ion-item>
+      <ion-item>{{ 'MENU_ALERTS' | translate }}</ion-item>
+    </ion-item-group>
+    <ion-item-group>
+      <ion-item-divider color="light">Measures</ion-item-divider>
+      <ion-item>Dashboard</ion-item>
+      <ion-item>Archives</ion-item>
+    </ion-item-group>
 
     <ion-list>
 

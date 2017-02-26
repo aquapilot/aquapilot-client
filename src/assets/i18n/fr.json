@@ -5,5 +5,16 @@
   "PASSWORD_PLACEHOLDER": "Mot de passe",
   "MENU_SETTINGS": "Réglages",
   "MENU_SENSORS": "Capteurs",
-  "MENU_ALERTS": "Alertes"
+  "MENU_ALERTS": "Alertes",
+  "MENU": "Menu",
+  "MENU_SYSTEMS": "Mes systèmes aquatiques",
+  "ADD_SYSTEM_ACTION": "Ajouter un système ...",
+  "NEW_AQUATIC_SYSTEM_WIZZARD_TITLE": "Assistant système aquatique",
+  "AQUATIC_SYSTEM_NAME": "Nom",
+  "AQUATIC_SYSTEM_TYPE_SELECT": "Genre de système aquatique",
+  "AQUARIUM_TYPE":"Aquarium",
+  "AQUAPONIC_TYPE":"Aquaponie",
+  "HYDROPONIC_TYPE":"Hydroponie",
+  "SAVE_NEW_AQUATIC_SYSTEM_ACTION": "Enregistrer",
+  "UPDATE_AQUATIC_SYSTEM_TITLE": "Modifier un système aquatique"
 }
