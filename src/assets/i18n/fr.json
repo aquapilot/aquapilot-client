@@ -1,4 +1,9 @@
 {
   "AUTHENTICATE_ACTION": "Connexion",
-  "REGISTER_ACTION": "S'enregistrer"
+  "REGISTER_ACTION": "S'enregistrer",
+  "EMAIL_PLACEHOLDER": "Adresse email",
+  "PASSWORD_PLACEHOLDER": "Mot de passe",
+  "MENU_SETTINGS": "Réglages",
+  "MENU_SENSORS": "Capteurs",
+  "MENU_ALERTS": "Alertes"
 }
