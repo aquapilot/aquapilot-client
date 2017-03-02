@@ -60,7 +60,14 @@ describe('Page: Login', () => {
 
   });
 
-  it('should initialises without any title', () => {
+  it('should display a login form', () => {
+
+    de = fixture.debugElement.query(By.css('form ion-input'));
+    el = de.nativeElement;
+    expect(el.textContent).toBeDefined(true);
+  });
+
+  it('should provide a link to register', () => {
     !expect(comp['title']).toBeDefined();
   });
 
@@ -69,7 +76,7 @@ describe('Page: Login', () => {
     de = fixture.debugElement.query(By.css('ion-title'));
     el = de.nativeElement;
 
-    comp.changeTitle('Your Page');
+   // comp.changeTitle('Your Page');
     fixture.detectChanges();
     expect(comp['title']).toEqual('Your Page');
     expect(el.textContent).toContain('Your Page');

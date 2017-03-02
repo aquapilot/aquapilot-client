@@ -8,6 +8,9 @@
       "dom",
       "es2015"
     ],
+    "types": [
+      "jasmine"
+    ],
     "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -17,7 +20,8 @@
     "src/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*spec.ts"
   ],
   "compileOnSave": false,
   "atom": {

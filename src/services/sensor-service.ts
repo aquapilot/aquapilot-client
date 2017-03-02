@@ -8,7 +8,6 @@ import {AngularFire, FirebaseListObservable} from 'angularfire2';
 export class SensorService {
 
   private brightnessMeasures: FirebaseListObservable<any[]>;
-  private temperatureMeasures: FirebaseListObservable<any[]>;
   private humidityMeasures: FirebaseListObservable<any[]>;
   private airMeasures: FirebaseListObservable<any[]>;
   private waterMeasures: FirebaseListObservable<any[]>;
