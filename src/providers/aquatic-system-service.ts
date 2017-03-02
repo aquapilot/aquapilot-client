@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map';
 import {AquaticSystemType} from "../models/aquatic-system-type";
 import {AngularFire} from "../../node_modules/angularfire2/angularfire2";
 import {FirebaseListObservable} from "../../node_modules/angularfire2/database/firebase_list_observable";
+import {FirebaseObjectObservable} from "angularfire2";
 
 /**
  * AquaticSystemService manage all stuff  related to aquatic systems and firebase (CRUD)
@@ -27,11 +28,15 @@ export class AquaticSystemService {
   }
 
   public update(aquaticSystem:AquaticSystem){
+    var system: FirebaseObjectObservable<AquaticSystem>;
+    system = this.angularFire.database.object("/systems/" + aquaticSystem.$key);
+    system.update(aquaticSystem);
+  }
 
-    // TODO: Implement it
-   // var systemToUpdate = aquaticSystem.key;
-   // this.getAll().update(systemToUpdate.uuid, systemToUpdate);
-
+  public delete(aquaticSystem:AquaticSystem){
+    var system: FirebaseObjectObservable<AquaticSystem>;
+    system = this.angularFire.database.object("/systems/" + aquaticSystem.$key);
+    system.remove();
   }
 
   public getAll(){
