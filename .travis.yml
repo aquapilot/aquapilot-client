@@ -12,7 +12,6 @@ branches:
 
 install:
   - npm install
-  - npm run lint
   - npm test
 
 before_install:
