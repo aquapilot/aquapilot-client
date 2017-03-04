@@ -100,9 +100,8 @@ module.exports = function(config) {
 
 
   if (process.env.TRAVIS) {
-    cfg.autoWatch = false;
-    cfg.browsers = ['Chrome_travis_ci'];
+    config.autoWatch = false;
+    config.browsers = ['Chrome_travis_ci'];
   }
 
-  config.set(cfg);
 };
