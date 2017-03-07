@@ -18,7 +18,7 @@ import {TranslateLoader, TranslateStaticLoader} from "ng2-translate";
 import {Http} from "@angular/http";
 import {NewAquaticSystemWizardPage} from "../pages/new-aquatic-system-wizard/new-aquatic-system-wizard";
 import {UpdateAquaticSystemPage} from "../pages/update-aquatic-system/update-aquatic-system";
-
+import {TabsPage} from "../pages/tabs/tabs";
 @NgModule({
   declarations: [
     MyApp,
@@ -29,7 +29,8 @@ import {UpdateAquaticSystemPage} from "../pages/update-aquatic-system/update-aqu
     AirPage,
     LoginPage,
     NewAquaticSystemWizardPage,
-    UpdateAquaticSystemPage
+    UpdateAquaticSystemPage,
+    TabsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -53,7 +54,8 @@ import {UpdateAquaticSystemPage} from "../pages/update-aquatic-system/update-aqu
     AirPage,
     LoginPage,
     NewAquaticSystemWizardPage,
-    UpdateAquaticSystemPage
+    UpdateAquaticSystemPage,
+    TabsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

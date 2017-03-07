@@ -25,12 +25,15 @@ export class Dashboard {
 
   constructor(public nav: NavController, params:NavParams, public sensorService: SensorService, public _config: RoundProgressConfig) {
 
+
+
     _config.setDefaults({
       color: '#84ad31',
       background: '#eaeaea',
     });
 
     this.activeAquaticSystem = params.get('activeAquaticSystem');
+
     console.log(this.activeAquaticSystem);
   }
 

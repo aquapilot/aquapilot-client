@@ -18,25 +18,6 @@
         </button>
       </ion-list>
     </ion-item-group>
-
-    <ion-item-group>
-      <ion-item-divider color="light">{{ 'MENU_SETTINGS' | translate }}</ion-item-divider>
-      <ion-item>{{ 'MENU_SENSORS' | translate }}</ion-item>
-      <ion-item>{{ 'MENU_ALERTS' | translate }}</ion-item>
-    </ion-item-group>
-    <ion-item-group>
-      <ion-item-divider color="light">Measures</ion-item-divider>
-      <ion-item>Dashboard</ion-item>
-      <ion-item>Archives</ion-item>
-    </ion-item-group>
-
-    <ion-list>
-
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-
   </ion-content>
 
 </ion-menu>

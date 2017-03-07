@@ -10,6 +10,7 @@ import {AquaticSystem} from "../models/aquatic-system";
 import {NewAquaticSystemWizardPage} from "../pages/new-aquatic-system-wizard/new-aquatic-system-wizard";
 import {AquaticSystemService} from "../providers/aquatic-system-service";
 import {FirebaseListObservable} from "../../node_modules/angularfire2/database/firebase_list_observable";
+import {TabsPage} from "../pages/tabs/tabs";
 
 @Component({
   templateUrl: 'app.html',
@@ -58,18 +59,14 @@ export class MyApp {
 
   }
 
-  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
-  }
-
   onClickAddAquaticSystem() {
     this.nav.push(NewAquaticSystemWizardPage);
   }
 
   onSelectAquaticSystemInMenu(aquaticSystem:AquaticSystem){
     console.log(aquaticSystem);
-    this.nav.setRoot(Dashboard, {'activeAquaticSystem':aquaticSystem});
+
+    //this.nav.setRoot(Dashboard, {'activeAquaticSystem':aquaticSystem});
+    this.nav.setRoot(TabsPage, {'activeAquaticSystem': aquaticSystem});
   }
 }

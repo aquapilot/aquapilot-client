@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NavController, Loading, AlertController, LoadingController} from 'ionic-angular';
 import {Dashboard} from "../dashboard/dashboard";
 import {AuthService} from "../../providers/auth-service";
+import {TabsPage} from "../tabs/tabs";
 
 /*
   Generated class for the Login page.
@@ -33,7 +34,7 @@ export class LoginPage {
         if (allowed) {
           setTimeout(() => {
             this.loading.dismiss();
-            this.nav.setRoot(Dashboard)
+            this.nav.setRoot(TabsPage)
           });
         } else {
           this.showError("Access Denied");
