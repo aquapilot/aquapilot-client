@@ -14,5 +14,12 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let s of sensors" (click)="openNavDetailsPage(s)" icon-left>
+      <ion-icon [name]="'logo-' + s.icon" [ngStyle]="{'color': s.color}" item-left></ion-icon>
+      {{ s._name }}
 
+      {{ s }}
+    </button>
+  </ion-list>
 </ion-content>

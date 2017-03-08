@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {SensorType} from "../../models/sensor-type";
 
 /*
   Generated class for the NewSensor page.
@@ -13,7 +14,13 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class NewSensorPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  public sensors: Array<string> = SensorType.names();
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewSensorPage');
