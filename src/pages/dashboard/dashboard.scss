@@ -2,6 +2,7 @@ dashboard {
 
   ion-card {
     padding:0;
+    height:148px; // TODO fix that it's not pretty it should be auto adjusted
   }
 
   ion-card-header {
@@ -33,5 +34,30 @@ dashboard {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  ion-card.add-button-card {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    ion-card-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-icon {
+
+        // TODO Create a mixin for that or use $vars
+        color: #bbb;
+        font-weight: 100;
+        font-size: 14vw;
+
+      }
+    }
+
   }
 }

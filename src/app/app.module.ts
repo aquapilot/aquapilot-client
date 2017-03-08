@@ -19,6 +19,7 @@ import {Http} from "@angular/http";
 import {NewAquaticSystemWizardPage} from "../pages/new-aquatic-system-wizard/new-aquatic-system-wizard";
 import {UpdateAquaticSystemPage} from "../pages/update-aquatic-system/update-aquatic-system";
 import {TabsPage} from "../pages/tabs/tabs";
+import {NewSensorPage} from "../pages/new-sensor/new-sensor";
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +31,8 @@ import {TabsPage} from "../pages/tabs/tabs";
     LoginPage,
     NewAquaticSystemWizardPage,
     UpdateAquaticSystemPage,
-    TabsPage
+    TabsPage,
+    NewSensorPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -55,7 +57,8 @@ import {TabsPage} from "../pages/tabs/tabs";
     LoginPage,
     NewAquaticSystemWizardPage,
     UpdateAquaticSystemPage,
-    TabsPage
+    TabsPage,
+    NewSensorPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

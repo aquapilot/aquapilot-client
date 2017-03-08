@@ -10,6 +10,7 @@ import {WaterPage} from "../water/water";
 import {AirPage} from "../air/air";
 import {AquaticSystem} from "../../models/aquatic-system";
 import {UpdateAquaticSystemPage} from "../update-aquatic-system/update-aquatic-system";
+import {NewSensorPage} from "../new-sensor/new-sensor";
 
 @Component({
   selector: 'dashboard',
@@ -51,6 +52,10 @@ export class Dashboard {
 
   public onClickAir(){
     this.nav.push(AirPage);
+  }
+
+  public onClickAddButton() {
+    this.nav.push(NewSensorPage);
   }
 
 
