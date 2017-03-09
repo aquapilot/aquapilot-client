@@ -4,7 +4,7 @@ import {SensorKind} from "./sensor-kind";
 export class WaterTemperatureSensor extends AbstractSensor {
 
     constructor(){
-      super("WATER_TEMP_SENSOR", "add", SensorKind.WATER);
+      super("WATER_TEMP_SENSOR", "thermometer", SensorKind.WATER);
     }
 
 }

@@ -4,7 +4,7 @@ import {SensorKind} from "./sensor-kind";
 export class LightSensor extends AbstractSensor {
 
     constructor(){
-      super("LIGHT_SENSOR", "add", SensorKind.PLANT);
+      super("LIGHT_SENSOR", "sunny", SensorKind.PLANT);
     }
 
 }

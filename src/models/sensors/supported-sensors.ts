@@ -5,16 +5,14 @@ import {WaterLevelSensor} from "./water-level-sensor";
 import {WaterTemperatureSensor} from "./water-temperature-sensor";
 export class SupportedSensors {
 
-  private static sensors:Array<AbstractSensor> = [];
-
   public static getAll() {
+    var sensors:Array<AbstractSensor> = [];
+    sensors.push(new AirTemperatureAndHumiditySensor());
+    sensors.push(new LightSensor());
+    sensors.push(new WaterLevelSensor());
+    sensors.push(new WaterTemperatureSensor());
 
-    this.sensors.push(new AirTemperatureAndHumiditySensor());
-    this.sensors.push(new LightSensor());
-    this.sensors.push(new WaterLevelSensor());
-    this.sensors.push(new WaterTemperatureSensor());
-
-    return this.sensors;
+    return sensors;
   }
 
 }

@@ -4,7 +4,7 @@ import {SensorKind} from "./sensor-kind";
 export class AirTemperatureAndHumiditySensor extends AbstractSensor {
 
     constructor(){
-      super("AIR_TEMP_AND_HUMIDITY_SENSOR", "add", SensorKind.PLANT);
+      super("AIR_TEMP_AND_HUMIDITY_SENSOR", "thermometer", SensorKind.PLANT);
     }
 
 }

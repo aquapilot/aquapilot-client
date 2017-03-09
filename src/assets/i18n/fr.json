@@ -15,7 +15,12 @@
   "AQUARIUM_TYPE":"Aquarium",
   "AQUAPONIC_TYPE":"Aquaponie",
   "HYDROPONIC_TYPE":"Hydroponie",
+  "ADD_SENSOR_TITLE": "Ajouter un capteur",
   "SAVE_NEW_AQUATIC_SYSTEM_ACTION": "Enregistrer",
   "UPDATE_AQUATIC_SYSTEM_TITLE": "Modifier un système aquatique",
-  "DELETE_AQUATIC_SYSTEM_ACTION": "Supprimer"
+  "DELETE_AQUATIC_SYSTEM_ACTION": "Supprimer",
+  "AIR_TEMP_AND_HUMIDITY_SENSOR": "Capteur température air et humidité",
+  "LIGHT_SENSOR": "Cpateur de luminosité",
+  "WATER_LEVEL_SENSOR": "Capteur de niveau d'eau",
+  "WATER_TEMP_SENSOR": "Capteur température de l'eau"
 }
