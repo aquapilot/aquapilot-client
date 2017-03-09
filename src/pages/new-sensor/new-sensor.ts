@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {SensorType} from "../../models/sensor-type";
+import {SensorType, WaterSensors, PlantSensors} from "../../models/sensor-type";
+import {AbstractSensor} from "../../models/sensors/abstract-sensor";
+import {SupportedSensors} from "../../models/sensors/supported-sensors";
 
 /*
   Generated class for the NewSensor page.
@@ -14,7 +16,8 @@ import {SensorType} from "../../models/sensor-type";
 })
 export class NewSensorPage {
 
-  public sensors: Array<string> = SensorType.names();
+  public sensors: Array<AbstractSensor> = SupportedSensors.getAll();
+  public plantSensors: Array<string> = PlantSensors.names();
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -23,6 +26,7 @@ export class NewSensorPage {
   }
 
   ionViewDidLoad() {
+
     console.log('ionViewDidLoad NewSensorPage');
   }
 
