@@ -16,8 +16,9 @@ import {SupportedSensors} from "../../models/sensors/supported-sensors";
 })
 export class NewSensorPage {
 
-  public sensors: Array<AbstractSensor> = SupportedSensors.getAll();
-  public plantSensors: Array<string> = PlantSensors.names();
+  //public sensors: Array<AbstractSensor> = SupportedSensors.getAll();
+  public plantSensors: Array<AbstractSensor> = SupportedSensors.getPlantSensors();
+  public waterSensors: Array<AbstractSensor> = SupportedSensors.getWaterSensors();
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {

@@ -19,8 +19,14 @@
   "SAVE_NEW_AQUATIC_SYSTEM_ACTION": "Enregistrer",
   "UPDATE_AQUATIC_SYSTEM_TITLE": "Modifier un système aquatique",
   "DELETE_AQUATIC_SYSTEM_ACTION": "Supprimer",
-  "AIR_TEMP_AND_HUMIDITY_SENSOR": "Capteur température air et humidité",
-  "LIGHT_SENSOR": "Cpateur de luminosité",
-  "WATER_LEVEL_SENSOR": "Capteur de niveau d'eau",
-  "WATER_TEMP_SENSOR": "Capteur température de l'eau"
+  "AIR_TEMP_AND_HUMIDITY_SENSOR": "Température et humidité",
+  "AIR_TEMP_AND_HUMIDITY_SENSOR_DESCRIPTION": "Capteur hybride",
+  "LIGHT_SENSOR": "Capteur de luminosité",
+  "LIGHT_SENSOR_DESCRIPTION": "Mesure la durée d'exposition au soleil.",
+  "WATER_LEVEL_SENSOR": "Niveau d'eau",
+  "WATER_LEVEL_SENSOR_DESCRIPTION": "Mesure le niveau de l'eau",
+  "WATER_TEMP_SENSOR": "Température de l'eau",
+  "WATER_TEMP_SENSOR_DESCRIPTION": "Température de l'eau",
+  "SENSOR_KIND_WATER_TITLE": "Eau",
+  "SENSOR_KIND_PLANT_TITLE": "Plantes"
 }

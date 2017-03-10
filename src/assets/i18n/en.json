@@ -19,8 +19,9 @@
   "UPDATE_AQUATIC_SYSTEM_TITLE": "Update system informations",
   "DELETE_AQUATIC_SYSTEM_ACTION": "Delete this aquatic system",
   "ADD_SENSOR_TITLE": "Add a new sensor",
-  "AIR_TEMP_AND_HUMIDITY_SENSOR": "Air temperature + Humidity sensor",
+  "AIR_TEMP_AND_HUMIDITY_SENSOR": "Air temp + Humidity",
+  "AIR_TEMP_AND_HUMIDITY_SENSOR_DESCRIPTION": "For plants",
   "LIGHT_SENSOR": "Light sensor",
-  "WATER_LEVEL_SENSOR": "Water level sensor",
-  "WATER_TEMP_SENSOR": "Water temperature sensor"
+  "WATER_LEVEL_SENSOR": "Water level",
+  "WATER_TEMP_SENSOR": "Water temperature"
 }

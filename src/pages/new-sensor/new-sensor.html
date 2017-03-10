@@ -13,11 +13,24 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <ion-list>
-    <button ion-item *ngFor="let s of sensors" (click)="openNavDetailsPage(s)" icon-left>
+    <ion-list-header>
+      {{ "SENSOR_KIND_WATER_TITLE" | translate }}
+    </ion-list-header>
+    <button ion-item *ngFor="let s of waterSensors" (click)="openNavDetailsPage(s)" icon-left>
       <ion-icon [name]="s.getIcon()" [ngStyle]="{'color': s.color}" item-left></ion-icon>
-      {{ s.getKey() | translate }}
+      <h2>{{ s.getKey() | translate }}</h2>
+      <p>{{ s.getKey() + "_DESCRIPTION" | translate }}</p>
     </button>
+    <ion-list-header>
+      {{ "SENSOR_KIND_PLANT_TITLE" | translate }}
+    </ion-list-header>
+    <button ion-item *ngFor="let s of plantSensors" (click)="openNavDetailsPage(s)" icon-left>
+      <ion-icon [name]="s.getIcon()" [ngStyle]="{'color': s.color}" item-left></ion-icon>
+      <h2>{{ s.getKey() | translate }}</h2>
+      <p>{{ s.getKey() + "_DESCRIPTION" | translate }}</p>
+    </button>
+
   </ion-list>
 </ion-content>
